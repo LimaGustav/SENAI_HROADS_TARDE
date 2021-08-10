@@ -1,9 +1,16 @@
+/*
+1 - Criar o banco de dados chamado
+SENAI_HROADS_MANHA/SENAI_HROADS_TARDE (conforme o período);
+*/
 CREATE DATABASE HROADS;
 GO
 
 USE HROADS;
 GO
 
+/*
+2 - Criar as tabelas no banco de dados
+*/
 CREATE TABLE CLASSE(
 	idClasse TINYINT PRIMARY KEY IDENTITY,
 	nomeClasse VARCHAR(30)	

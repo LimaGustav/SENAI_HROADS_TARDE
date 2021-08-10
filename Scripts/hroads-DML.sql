@@ -1,6 +1,11 @@
 USE HROADS;
 GO
 
+/*
+3 - Inserir os registros conforme descrição no próprio texto (classes, habilidades,
+tipos de habilidades e personagens)
+*/
+
 INSERT INTO CLASSE (nomeClasse)
 VALUES	('Bárbaro'),('Cruzado'),('Caçadora de Demônios'),
 		('Monge'),('Necromante'),('Feiticeiro'),('Arcanista')
@@ -27,11 +32,18 @@ INSERT INTO CLASSEHABILIDADE (idClasse, idHabilidade)
 VALUES	(1,1),(1,2),(2,2),(3,1),(4,3),(4,2),(6,3)
 GO
 
+
+/*
+4 - Atualizar o nome do personagem Fer8 para Fer7
+*/
 UPDATE PERSONAGEM
 SET nomePersonagem = 'Fer7'
 WHERE nomePersonagem = 'Fer8'
 GO
 
+/*
+5 - Atualizar o nome da classe de Necromante para Necromancer
+*/
 UPDATE CLASSE 
 SET nomeClasse = 'Necromancer'
 WHERE nomeClasse = 'Necromante'
